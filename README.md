@@ -21,15 +21,42 @@ The **Enterprise DevOps Pipeline** is a comprehensive technical showcase of mode
 
 ### 🛠️ High-Level Infrastructure
 
-![Architecture](architecture/devops-architecture.png)
+```mermaid
+graph LR
+    Dev([Developer]) -->|Git Push| GitHub{GitHub Repo}
+    subgraph pipeline ["CI/CD Pipeline"]
+        GitHub --> Build[Docker Build]
+        Build --> Run[Run Container]
+        Run --> Health[Health Monitoring]
+        Health --> Deploy[Simulated Deployment]
+    end
+    subgraph infra ["Cloud Infrastructure"]
+        Deploy --> Provision[Terraform Provisioning]
+        Provision --> EC2[EC2 Instance]
+        EC2 --> S3[(S3 Logs)]
+    end
+```
 
 ### 📈 CI/CD Flow
 
-![CI/CD Flow](architecture/cicd-flow.png)
+```mermaid
+graph LR
+    Start([Commit]) --> Terraform[IaC Validate]
+    Terraform --> Build[Docker Build]
+    Build --> Test[Integration Test]
+    Test --> Monitor[Health Scan]
+    Monitor --> Deploy[Cloud Deploy]
+```
 
 ### 🔄 Terraform Infrastructure Logic
 
-![Terraform](architecture/terraform-infra.png)
+```mermaid
+graph LR
+    Plan[Terraform Plan] --> VPC[Create VPC]
+    VPC --> Subnet[Create Subnet]
+    Subnet --> Security[Security Groups]
+    Security --> Nodes[Compute Nodes]
+```
 
 ---
 
@@ -84,13 +111,6 @@ chmod +x scripts/*.sh
 ```
 
 ---
-
-## 🖼️ Screenshots Section (Showcase)
-
-1. **Docker Build Process**: ![Build](screenshots/docker-build.png)
-2. **Infrastructure Output**: ![Terraform](screenshots/terraform-output.png)
-3. **Running Dashboard**: ![Dashboard](screenshots/docker-running.png)
-4. **Monitoring Alerts**: ![Alerts](screenshots/monitoring-dashboard.png)
 
 ---
 
