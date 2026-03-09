@@ -142,6 +142,20 @@ This project demonstrates my ability to design and implement secure, automated, 
 
 ---
 
+## 👨‍💻 Author
+
+**Sachin C S**  
+AWS Cloud & DevOps Engineer | Infrastructure Automation Specialist
+
+📧 **Email**: [cssachin83@gmail.com](mailto:cssachin83@gmail.com)  
+📱 **Phone**: +91 8496001030  
+🌐 **Connect With Me**:
+
+- [LinkedIn](https://www.linkedin.com/in/sachin-c-s/)
+- [GitHub](https://github.com/01Sachinc)
+
+---
+
 ## 📜 License
 
 MIT License. Created by **Sachin C S** for Portfolio.
