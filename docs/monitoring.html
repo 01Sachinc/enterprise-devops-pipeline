@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise DevOps Docs | Monitoring</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <style>
+        body { max-width: 900px; margin: auto; padding: 2rem; }
+        nav { margin-bottom: 2rem; border-bottom: 1px solid #444; padding-bottom: 1rem; }
+        nav a { margin-right: 1rem; text-decoration: none; color: #58a6ff; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Overview</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="pipeline.html">CI/CD</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="monitoring.html">Monitoring</a>
+    </nav>
+    <h1>Monitoring System</h1>
+    <p>Ensuring system reliability through automated health checks and log analysis.</p>
+    
+    <h2>Simulation Logic</h2>
+    <p>The monitoring script (`scripts/monitor.sh`) performs a 3-step validation cycle:</p>
+    <ul>
+        <li><strong>Container Health:</strong> Verifies the Docker engine and target container status.</li>
+        <li><strong>Log Extraction:</strong> Retrieves the latest operational logs from the container.</li>
+        <li><strong>Anomaly Detection:</strong> Scans for error patterns and resource spikes.</li>
+    </ul>
+
+    <h2>Alerting Mechanism</h2>
+    <p>In the event of a failure, the system generates a simulated SNS alert and provides detailed diagnostic output to the pipeline orchestrator.</p>
+</body>
+</html>

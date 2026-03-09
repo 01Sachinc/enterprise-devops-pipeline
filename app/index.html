@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise DevOps Dashboard | Sachin C S</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">DevOps Pro</div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">Infrastructure</a></li>
+                <li><a href="#">Pipelines</a></li>
+                <li><a href="#">Monitoring</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <p>Sachin C S</p>
+            <span>Cloud Engineer</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <header>
+            <h1>System Overview</h1>
+            <div class="system-time" id="clock">00:00:00</div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- CI/CD Status -->
+            <div class="card" id="cicd-card">
+                <h3>CI/CD Pipeline</h3>
+                <div class="status-indicator">
+                    <span class="dot pulse green"></span>
+                    <span class="label">Running</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width: 75%;"></div>
+                </div>
+                <p class="details">Stage: Docker Build</p>
+            </div>
+
+            <!-- Container Status -->
+            <div class="card" id="container-card">
+                <h3>Container Status</h3>
+                <div class="status-indicator">
+                    <span class="dot green"></span>
+                    <span class="label">Healthy</span>
+                </div>
+                <p class="details">Nodes: 3 Active</p>
+            </div>
+
+            <!-- Infrastructure -->
+            <div class="card" id="infra-card">
+                <h3>Infrastructure (IaC)</h3>
+                <div class="status-indicator">
+                    <span class="dot blue"></span>
+                    <span class="label">Provisioned</span>
+                </div>
+                <p class="details">Terraform: v1.5.0</p>
+            </div>
+
+            <!-- Monitoring Alerts -->
+            <div class="card" id="alerts-card">
+                <h3>System Alerts</h3>
+                <div class="status-indicator">
+                    <span class="dot gray"></span>
+                    <span class="label">No Alerts</span>
+                </div>
+                <div class="alert-list">
+                    <div class="alert-item">Everything is running smoothly.</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="log-section">
+            <h3>Live Deployment Logs</h3>
+            <div class="terminal" id="terminal-logs">
+                <p>> Initializing Enterprise DevOps Pipeline...</p>
+                <p>> Terraform init successful.</p>
+                <p>> Building Docker image: enterprise-app:latest...</p>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

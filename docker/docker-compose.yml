@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  enterprise-dashboard:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "80:80"
+    container_name: enterprise-app
+    restart: always
+
+  monitoring-agent:
+    image: alpine
+    container_name: enterprise-monitor
+    command: /bin/sh -c "while true; do echo '[MONITOR] System status: Healthy at $$(date)'; sleep 30; done"

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise DevOps Docs | CI/CD Pipeline</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <style>
+        body { max-width: 900px; margin: auto; padding: 2rem; }
+        nav { margin-bottom: 2rem; border-bottom: 1px solid #444; padding-bottom: 1rem; }
+        nav a { margin-right: 1rem; text-decoration: none; color: #58a6ff; }
+        .diagram { background: #fff; padding: 1rem; border-radius: 8px; margin: 2rem 0; text-align: center; }
+        img { max-width: 100%; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Overview</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="pipeline.html">CI/CD</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="monitoring.html">Monitoring</a>
+    </nav>
+    <h1>CI/CD Workflow</h1>
+    <p>Automated deployment pipeline powered by GitHub Actions.</p>
+    
+    <div class="diagram">
+        <img src="../architecture/cicd-flow.png" alt="CI/CD Flow">
+        <p style="color: #333;"><i>Standardized CI/CD Delivery Flow</i></p>
+    </div>
+
+    <h2>Pipeline Stages</h2>
+    <ol>
+        <li><strong>Initialize:</strong> Checkout repository and setup dependencies.</li>
+        <li><strong>IaC Validation:</strong> Terraform validation check.</li>
+        <li><strong>Build:</strong> Docker image construction.</li>
+        <li><strong>Integration:</strong> Local run and health verification.</li>
+        <li><strong>Deliver:</strong> Simulated cloud environment deployment.</li>
+    </ol>
+</body>
+</html>

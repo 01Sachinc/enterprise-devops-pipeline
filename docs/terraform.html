@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise DevOps Docs | Terraform IaC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <style>
+        body { max-width: 900px; margin: auto; padding: 2rem; }
+        nav { margin-bottom: 2rem; border-bottom: 1px solid #444; padding-bottom: 1rem; }
+        nav a { margin-right: 1rem; text-decoration: none; color: #58a6ff; }
+        .diagram { background: #fff; padding: 1rem; border-radius: 8px; margin: 2rem 0; text-align: center; }
+        img { max-width: 100%; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Overview</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="pipeline.html">CI/CD</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="monitoring.html">Monitoring</a>
+    </nav>
+    <h1>Infrastructure as Code</h1>
+    <p>Provisioning global resources with Terraform configuration files.</p>
+    
+    <div class="diagram">
+        <img src="../architecture/terraform-infra.png" alt="Terraform Infra">
+        <p style="color: #333;"><i>IaC Simulation Logic Breakdown</i></p>
+    </div>
+
+    <h2>Resource Inventory</h2>
+    <ul>
+        <li><strong>Network:</strong> Custom Virtual Private Cloud (VPC).</li>
+        <li><strong>Compute:</strong> Elastic Cloud Compute (EC2) instances.</li>
+        <li><strong>Storage:</strong> Persistent S3 storage for application logs.</li>
+    </ul>
+</body>
+</html>

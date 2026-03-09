@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise DevOps Docs | Architecture</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <style>
+        body { max-width: 900px; margin: auto; padding: 2rem; }
+        nav { margin-bottom: 2rem; border-bottom: 1px solid #444; padding-bottom: 1rem; }
+        nav a { margin-right: 1rem; text-decoration: none; color: #58a6ff; }
+        .diagram { background: #fff; padding: 1rem; border-radius: 8px; margin: 2rem 0; text-align: center; }
+        img { max-width: 100%; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Overview</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="pipeline.html">CI/CD</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="monitoring.html">Monitoring</a>
+    </nav>
+    <h1>System Architecture</h1>
+    <p>The system follows a cloud-native architecture pattern, designed for scalability and high availability.</p>
+    
+    <div class="diagram">
+        <img src="../architecture/devops-architecture.png" alt="DevOps Architecture">
+        <p style="color: #333;"><i>High-Level Enterprise DevOps Architecture</i></p>
+    </div>
+
+    <h2>Key Components</h2>
+    <ul>
+        <li><strong>Infrastructure:</strong> Provisioned using Terraform (VPC, Subnets, EC2).</li>
+        <li><strong>Orchestration:</strong> Docker Compose for multi-container web and monitor services.</li>
+        <li><strong>Monitoring:</strong> Real-time health checks and alerting via Bash automation.</li>
+    </ul>
+</body>
+</html>
