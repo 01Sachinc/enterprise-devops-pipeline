@@ -112,36 +112,6 @@ chmod +x scripts/*.sh
 
 ---
 
----
-
-## 💼 Professional Showcase
-
-### LinkedIn Post Content
-
-**Headline**: Just Built an Enterprise-Grade DevOps Pipeline! 🚀
-
-I've just completed a deep-dive project into **Enterprise DevOps Orchestration**. This project bridges the gap between manual provisioning and fully automated "Everything-as-Code" environments.
-
-🔹 **Technical Highlights**:
-
-- **Terraform**: Modeled VPC and EC2 provisioning via IaC.
-- **Docker**: Containerized a custom DevOps Dashboard for 100% environment parity.
-- **GitHub Actions**: Configured a multi-stage CI/CD pipeline for automated delivery.
-- **Bash Automation**: Created a 5-script modular engine that manages the entire lifecycle.
-
-This project demonstrates my ability to design and implement secure, automated, and scalable cloud infrastructure.
-
-#DevOps #Terraform #Docker #CloudEngineering #Automation #SachinCS
-
-### Resume Bullet Points
-
-- **Engineered an End-to-End DevOps Pipeline**: Developed an automated CI/CD ecosystem using GitHub Actions, Docker, and Terraform, ensuring 100% test coverage before deployment.
-- **Architected Infrastructure-as-Code (IaC)**: Utilized Terraform to model complex cloud topologies including VPCs, Subnets, and Compute nodes, reducing provisioning time.
-- **Optimized Container Workflows**: Designed high-performance Docker environments using Nginx Alpine, achieving a 75% reduction in production image sizes.
-- **Automated Health & Monitoring**: Developed sophisticated Bash monitoring scripts to analyze real-time container logs and trigger proactive alerts.
-
----
-
 ## 👨‍💻 Author
 
 **Sachin C S**  
